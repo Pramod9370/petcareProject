@@ -1,0 +1,80 @@
+<div th:fragment="navbar">
+    <!DOCTYPE html>
+    
+    <html lang="en" xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3" th:fragment="navbar">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Home - Brand</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+       
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/-Filterable-Cards-.css">
+        <link rel="stylesheet" href="assets/css/Bootstrap-Cards-v2.css">
+        <link rel="stylesheet" href="assets/css/Different-Styled---Cards-1.css">
+        <link rel="stylesheet" href="assets/css/Different-Styled---Cards.css">
+        <link rel="stylesheet" href="assets/css/featured-products-slider-1.css">
+        <link rel="stylesheet" href="assets/css/featured-products-slider.css">
+        <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+        <link rel="stylesheet" href="assets/css/News-Cards.css">
+        <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
+        <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
+    </head>
+    
+    <body id="page-top">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+            <div class="container"><a class="navbar-brand" href="#page-top">pet Care</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-nav ml-auto text-uppercase">
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" th:href="@{/}">home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" th:href="@{/shop}" href="#">Shop</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" th:href="@{/disease}" href="#">Animal</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"th:href="@{/}">About</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" th:href="@{/}">services</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" th:href="@{/contact}">Contact</a></li>
+                         <li class="nav-item active">
+                                <a class="nav-link" th:href="@{/cart}" href="#">cart</a>
+                            </li>
+                            
+        <li class="nav-item active">
+            <span class="nav-link text-alert" th:text="${cartCount}">0</span>
+        </li>
+        
+        
+                            
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle js-scroll-trigger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item"href="./login.html"
+              th:href="@{/login}">Login</a>
+              <a class="dropdown-item"href="./register.html" th:href="@{/register}">Sign up</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" th:href="@{/logout}" href="#">Logout</a>
+            </div>
+          </li>
+                    </ul>
+            </div>
+        </nav>
+</div>
+ 
